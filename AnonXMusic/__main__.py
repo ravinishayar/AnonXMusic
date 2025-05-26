@@ -1,3 +1,19 @@
+# AnonXMusic/__main__.py
+
+import os
+
+cookie_content = os.getenv("COOKIES_CONTENT")
+if cookie_content:
+    with open("cookies.txt", "w") as f:
+        f.write(cookie_content)
+
+# इसके बाद नीचे का पुराना कोड रहेगा
+from AnonXMusic import app
+from pyrogram import idle
+
+...
+
+
 import asyncio
 import importlib
 
